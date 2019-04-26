@@ -1,0 +1,20 @@
+#! /bin/bash
+
+
+echo "Installing Homebrew..."
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+echo "Installing Python 3..."
+brew install python
+echo "Installing Python Libraries..."
+pip3 install sqlalchemy
+pip3 install openpyxl
+pip3 install pandas
+pip3 install matplotlib
+pip3 install pillow
+pip3 install python-crontab
+pip3 install tabulate
+echo "Installing MySQL..."
+brew install mysql
+echo "Installing Python MySQL Connectors..."
+pip3 install mysqlclient
+pip3 install mysql-connector-python

@@ -1,0 +1,9 @@
+---
+applications:
+- name: flaskExample
+  memory: 128MB
+  disk_quota: 512MB
+  buildpack: python_buildpack
+  command: python flask_pillars_api.py
+  instances: 1
+  random-route: true
